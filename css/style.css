@@ -25,3 +25,24 @@ body {
 .titulo span {
     font-size: 2rem;
 }
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+    padding: 1rem 0;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
