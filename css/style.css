@@ -8,6 +8,7 @@
     --fuente-principal: 3.8rem;
 }
 
+/* Globales */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -23,6 +24,39 @@ body {
     font-size: 16px;
     font-family: "Krub", serif;
 }
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.boton:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/* Tipografía */
 
 h1 {
     font-size: 3.8rem;
@@ -45,11 +79,7 @@ span {
     font-size: 2rem;
 }
 
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
+/* Navegación principal */
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -81,6 +111,8 @@ span {
     color: var(--oscuro);
 }
 
+/* Hero */
+
 .hero {
     background-image: url("../img/hero.jpg");
     background-repeat: no-repeat;
@@ -106,7 +138,7 @@ span {
     color: var(--blanco);
 }
 
-.ubicacion {
+.contenido-hero .ubicacion {
     display: flex;
     align-items: center;
 }
@@ -115,22 +147,4 @@ span {
 }
 .ubicacion-icon {
     color: var(--primario);
-}
-
-.boton {
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 2rem;
-    border-radius: .5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-top: 2rem;
-    cursor: pointer;
-}
-
-.boton:hover {
-    background-color: var(--primario);
-    color: var(--oscuro);
 }
