@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <h1 class="titulo">Jesus Daniel Castro <span>Web Dev</span></h1>
+        <h1 class="titulo">Jesus Daniel Castro <span>Freelancer</span></h1>
     </header>
 
     <div class="nav-bg">
@@ -30,7 +30,7 @@
     <section class="hero">
         <div class="contenido-hero">
 
-            <h2>Diseño y Desarrollo Web <span>Dev</span></h2>
+            <h2>Diseño y Desarrollo Web <span>Freelancer</span></h2>
 
             <div class="ubicacion">
                 <div class="ubicacion-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -122,35 +122,36 @@
                 <fieldset>
                     <legend>Contactame llenando todos los campos</legend>
 
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Tu Nombre" id="nombre" name="nombre" required>
-                    </div>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" required>
+                        </div>
 
-                    <div>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" placeholder="Tu Teléfono" id="telefono" name="telefono" required>
-                    </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono:</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono" id="telefono" name="telefono" required>
+                        </div>
 
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" placeholder="Tu Correo" id="email" name="email" required>
-                    </div>
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input class="input-text" type="email" placeholder="Tu Correo" id="email" name="email" required>
+                        </div>
 
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="input-text" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                        </div>
                     </div>
-
-                    <div>
-                        <input class="boton" type="submit" value="Enviar">
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
 
                 </fieldset>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados. Jesús Daniel Castro</p>
     </footer>
 
