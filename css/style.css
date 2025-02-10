@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 
 h1, h2, h3 {
@@ -158,6 +158,35 @@ span {
     color: var(--primario);
 }
 
-.servicios {
-    display: grid;
+/* Servicios */
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
